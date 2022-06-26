@@ -26,7 +26,8 @@ body{
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
-    padding-right: 15px;   
+    padding-right: 15px;
+    outline: 1px solid red;   
     
 }
 
@@ -60,9 +61,7 @@ a{
     margin-right: 93px;     
 }
 .logo .black:hover{
-    color: var(--blue-color); 
-    
-  
+    color: var(--blue-color);  
 }
 
 .logo .white:hover{
@@ -92,6 +91,7 @@ ul{
 .basic-linck{
     display: flex;
     justify-content: flex-end;
+    
     padding-left: 0px; 
     margin-left: auto; 
     
@@ -100,6 +100,27 @@ ul{
     margin-right: 50px;
 
 }
+/*  Конверт и телефон */
+.linck {
+    display: flex;
+    align-items: center;  
+}
+
+.envelope{
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+    
+} 
+
+.smartphone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
 .basic-linc{
     display: flex;
     padding-left: 0%;
@@ -373,6 +394,34 @@ ul{
 .people-description{
     padding: 30px 0px;
 }
+/* Команда Ссылки */
+.team-link-icon{
+    
+}
+.team-icon{
+    background-color: aqua;
+    padding-left: 0px;
+    
+
+}
+.team-icon-basic{
+    display: inline-flex;
+    content: '';
+    width: 44px;
+    height: 44px;
+    background-color: var(--black-color);
+    border-radius: 50%;
+    
+    
+    background-size: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.team-icon-basic:hover{
+    background-color: var(--blue-color);
+    
+}
 /* Проект */
 
 .section-block{
@@ -431,6 +480,56 @@ ul{
     display: block;
     max-width: 100%;
     height: auto;
+}
+/* Постоянные клиенты */
+.common-clients{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.clients-section{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--black-color);
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+.icon-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px;
+    padding-left: 0px;
+    
+}
+.clients{
+    display: flex;
+    background-color: var(--white-color);
+    height: 92px;
+    width: 170px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+
+    fill: #afb1b8;
+}
+.clients:not(:last-child){
+    margin-right: 30px;
+}
+.clients-icon{
+    display: inline-flex;
+    align-self: center;
+    height: 60px;
+    
+    
+}
+.clients:hover{
+    border: 1px solid var(--blue-color);
+    cursor: pointer;
+}
+.clients-pic:hover{ 
+    fill: var(--blue-color);  
 }
 /* Футер */
 .footer-grey{
