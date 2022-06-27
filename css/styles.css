@@ -410,18 +410,20 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
-
-    height: 44px;
+    
     width: 44px;
-    border-radius: 50%; 
+    height: 44px;
+    border-radius: 50%;
+
     background-color: var(--white-color);
     fill: var(--basic-text-color);      
 }
-.team-icon:not(:last-child){
-    margin-right: 10px;
+
+.team-icon + .team-icon{
+    margin-left: 10px;
 }
-.team-icon .links:hover,
-.team-icon .links:focus{
+.links:hover,
+.links:focus{
     background-color: var(--blue-color);
     fill: var(--white-color);
 }
