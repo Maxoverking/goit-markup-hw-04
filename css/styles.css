@@ -27,7 +27,7 @@ body{
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 1px solid red;   
+      
     
 }
 
@@ -180,15 +180,14 @@ ul{
     text-align: center;
     background-image:linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
         url('../images/Basic poster.jpg');
-    background-size: cover;
+    object-fit: cover;
     background-repeat: no-repeat;
     background-position: center;
     
 }
 .section-title-h1-button{
     padding-top: 200px;
-    padding-bottom: 200px;
-  
+    padding-bottom: 200px;  
 
 }
 .section-title-h1{
@@ -368,7 +367,7 @@ ul{
     
     
 }
-.section-people li{
+.section-people .team{
     background-color: var(--white-color);
     text-align: center;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -389,39 +388,44 @@ ul{
     line-height: 1.18;
     color: var(--basic-text-color);
     margin: 0px;
+    padding-bottom: 16px;
     
 }
 .people-description{
     padding: 30px 0px;
+    
 }
 /* Команда Ссылки */
+.people-icon{
+    margin: 0;
+    
+}
 .team-link-icon{
-    
-}
-.team-icon{
-    background-color: aqua;
-    padding-left: 0px;
-    
-
-}
-.team-icon-basic{
     display: inline-flex;
-    content: '';
-    width: 44px;
+    justify-content: center;
+    width: 206px;
+    padding-left: 0px;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     height: 44px;
-    background-color: var(--black-color);
-    border-radius: 50%;
-    
-    
-    background-size: 20px;
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor: pointer;
+    width: 44px;
+    border-radius: 50%; 
+    background-color: var(--white-color);
+    fill: var(--basic-text-color);      
 }
-.team-icon-basic:hover{
+.team-icon:not(:last-child){
+    margin-right: 10px;
+}
+.team-icon .links:hover,
+.team-icon .links:focus{
     background-color: var(--blue-color);
-    
+    fill: var(--white-color);
 }
+
 /* Проект */
 
 .section-block{
@@ -453,7 +457,15 @@ ul{
     border: 1px solid #EEEEEE;
     margin-right: 30px;
     margin-bottom: 30px;
+    cursor: pointer;
+
     
+}
+.project-item:hover,
+.project-item:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-title{
@@ -574,11 +586,9 @@ ul{
 .footer-all {
     display:  flex;
     align-items: baseline;
-    outline: 1px solid teal;
 }
 .social-link-icon{
-    margin-left: 70px;
-    outline: 1px solid red;   
+    margin-left: 70px;  
 }
 
 .social-link{
@@ -625,8 +635,9 @@ ul{
 .foorer-icon-basic:nth-child(4){
     background-image: url(../images/icon/linkedin\ 1.svg);
 }
-.foorer-icon-basic:hover{
-    background-color: #2196F3;
+.foorer-icon-basic:hover,
+.foorer-icon-basic:focus{
+    background-color: var(--blue-color);
 }
 .foorer-icon-basic:not(:last-child){
     margin-right: 10px;
