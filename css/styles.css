@@ -178,7 +178,7 @@ ul{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    background-image:linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+    background-image:linear-gradient(to bottom,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
         url('../images/Basic poster.jpg');
     object-fit: cover;
     background-repeat: no-repeat;
@@ -233,6 +233,7 @@ ul{
     color: var(--white-color);
     cursor: pointer;
     opacity: .7;
+    
 }
 /* Кнопки портфолио */
 
@@ -407,6 +408,9 @@ ul{
     padding-left: 0px;
 }
 .links{
+    color: var(--basic-text-color);
+}
+.links{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -416,7 +420,7 @@ ul{
     border-radius: 50%;
 
     background-color: var(--white-color);
-    fill: var(--basic-text-color);      
+    fill: currentColor;      
 }
 
 .team-icon + .team-icon{
@@ -510,41 +514,40 @@ ul{
     margin-top: 0px;
     margin-bottom: 50px;
 }
+.clients-icon{
+    display: block;
+}
 .icon-item{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    display:flex;
+    justify-content: space-between;
+
     margin: 0px;
     padding-left: 0px;
-    
 }
+
 .clients{
     display: flex;
-    background-color: var(--white-color);
-    height: 92px;
+    justify-content: center;
+    align-items: center;
+
     width: 170px;
-    border: 1px solid #AFB1B8;
+    height: 92px;
+
+    border: 1px solid #afb1b8;
     border-radius: 4px;
 
     fill: #afb1b8;
 }
-.clients:not(:last-child){
-    margin-right: 30px;
+/* .icon-item-block + .icon-item-block{
+    margin-left: 30px;
+} */
+.clients:hover,
+.clients:focus{
+    border-color: var(--blue-color);
+    fill: var(--blue-color);
 }
-.clients-icon{
-    display: inline-flex;
-    align-self: center;
-    height: 60px;
-    
-    
-}
-.clients:hover{
-    border: 1px solid var(--blue-color);
-    cursor: pointer;
-}
-.clients-pic:hover{ 
-    fill: var(--blue-color);  
-}
+
+
 /* Футер */
 .footer-grey{
     background-color: var(--section-order-service); 
@@ -604,44 +607,33 @@ ul{
     margin-top: 0px;
     margin-bottom: 20px;
 }
-.footer-icon {
-    padding-left: 0px;  
-    margin: 0px;  
-}
-.foorer-icon-basic{
+.footer-link-icon{
     display: inline-flex;
+    justify-content: center;
+    width: 206px;
+    margin: 0%;
+    padding-left: 0px;
+}
 
-    content: '';
+.links-foo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     width: 44px;
     height: 44px;
-    background-color: rgba(255, 255, 255, 10%);
     border-radius: 50%;
 
-    background-size: 20px;
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--white-color);
 }
-.foorer-icon-basic:nth-child(1){
-    background-image: url(../images/icon/instagram\ 2.svg);
-        
-}
-.foorer-icon-basic:nth-child(2){
-    background-image: url(../images/icon/twitter\ 1.svg);
-    
-}
-.foorer-icon-basic:nth-child(3){
-    background-image: url(../images/icon/facebook\ 1.svg);
-    
-}
-.foorer-icon-basic:nth-child(4){
-    background-image: url(../images/icon/linkedin\ 1.svg);
-}
-.foorer-icon-basic:hover,
-.foorer-icon-basic:focus{
-    background-color: var(--blue-color);
-}
-.foorer-icon-basic:not(:last-child){
-    margin-right: 10px;
 
+.team-icon+.team-icon {
+    margin-left: 10px;
+}
+
+.links-foo:hover,
+.links-foo:focus {
+    background-color: var(--blue-color);
+    
 }
