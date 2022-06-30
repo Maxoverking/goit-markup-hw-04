@@ -48,7 +48,6 @@ a{
     color: var(--white-color);
 }
 .basic{
-    background-color: var(--white-color);
     padding-top: 24px;
     padding-bottom: 25px;
     
@@ -59,11 +58,14 @@ a{
     font-size: 26px;
     margin-right: 93px;     
 }
-.logo .black:hover{
+.logo .black:hover,
+.logo .black:focus
+.logo .black:active{
     color: var(--blue-color);  
 }
 
-.logo .white:hover{
+.logo .white:hover,
+.logo .white:focus{
     color: var(--blue-color);
 }
 
@@ -77,8 +79,7 @@ ul{
 }
 .basic-linc{
     display: block;
-    margin: 0%; 
-    
+    margin: 0%;   
 }
 .basic-linck{
     display: block;
@@ -135,20 +136,23 @@ ul{
     padding-left: 0px;
 }
 
-.basic-linc .linc{
+.linc{
     color: var(--black-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.02em;    
-}
-
-.basic-linc .linc:hover, 
-.basic-linc.linc:focus{
-    color: var(--blue-color);
+    letter-spacing: 0.02em; 
     
 }
-.basic-linc .linc.current{
+
+.linc:hover, 
+.linc:focus,
+.linc:active{
+    color: var(--blue-color);
+    
+    
+}
+.linc.current{
     color: var(--blue-color);
 }
 
@@ -171,7 +175,6 @@ ul{
 /* Cекции h1 h2 */
 
 .section-color-black{
-    background-color: var(--section-order-service);
     max-width: 1600px;
     height: 600px;
     margin-left: auto;
@@ -181,8 +184,7 @@ ul{
         url('../images/Basic poster.jpg');
     object-fit: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    
+    background-position: center;   
 }
 .section-title-h1-button{
     padding-top: 200px;
@@ -411,7 +413,7 @@ ul{
     padding-left: 0px;
 }
 .links{
-    color: var(--basic-text-color);
+    color: #afb1b8;
 }
 .links{
     display: flex;
