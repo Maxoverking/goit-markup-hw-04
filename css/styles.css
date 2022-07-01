@@ -75,7 +75,8 @@ ul{
 
 .basic-header{
     display: flex;
-    align-items: center;   
+    align-items: center; 
+      
 }
 .basic-linc{
     display: block;
