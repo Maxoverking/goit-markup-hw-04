@@ -148,9 +148,7 @@ ul{
 .linc:hover, 
 .linc:focus,
 .linc:active{
-    color: var(--blue-color);
-    
-    
+    color: var(--blue-color);    
 }
 .linc.current{
     color: var(--blue-color);
@@ -168,7 +166,8 @@ ul{
     
 }
 .basic-linck .linck:hover, 
-.basic-linck.linck:focus{
+.basic-linck .linck:focus,
+.basic-linck .linck:active{
     color: var(--blue-color);
 }
 
