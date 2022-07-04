@@ -171,7 +171,7 @@ ul{
 .basic-linck .linck:active{
     color: var(--blue-color);
 }
-
+ 
 /* Cекции h1 h2 */
 
 .section-color-black{
@@ -180,7 +180,9 @@ ul{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    background-image:linear-gradient(to bottom,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+    background-color: var(--section-order-service);
+    background-image:linear-gradient(to bottom,rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
         url('../images/Basic poster.jpg');
     object-fit: cover;
     background-repeat: no-repeat;
@@ -460,6 +462,7 @@ ul{
     width: 370px;
     border: 1px solid #EEEEEE;
     cursor: pointer;
+    
 }
 
 .project-item:nth-child(3n) {
@@ -502,6 +505,7 @@ ul{
     height: auto;
 
 }
+ 
 /* Постоянные клиенты */
 .common-clients{
     padding-top: 94px;
